@@ -53,8 +53,8 @@ app.use((req, res, next) => {
 
 app.use('/feed', feedRouter)
 app.use('/auth', authRouter)
-app.use('/', (req, res, next) => {
-    res.json('Hello from node app')
+app.use('*', (req, res, next) => {
+    res.status(404).send("Error 404 Invalid Endpoint");
 })
 
 const accessLogStreams = fs.createWriteStream(path.join(__dirname, 'access.log'), {flags: 'a'})  // for append not overwrite

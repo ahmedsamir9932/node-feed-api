@@ -1,0 +1,7 @@
+{
+    "env": {
+        "DB_USER": "ahmedsamir9932",
+        "DB_PASSWORD": "T0GzCmn86VPgktZv",
+        "DB_NAME": "messages"
+    }
+}
